@@ -1,0 +1,10 @@
+<div id="detail">
+    <ol>
+        <h1>Events</h1>
+        <li ng-repeat="event in events | limitTo: 5">
+            <p>{{ event.title }}</p>
+            <p>{{ event.description }}</p>
+            <p>Characters involved: {{ event.characters.items[0].name }}, {{ event.characters.items[1].name }}, {{ event.characters.items[2].name }}, {{ event.characters.items[3].name }}, {{ event.characters.items[4].name }}, {{ event.characters.items[5].name }}, {{ event.characters.items[6].name }}, {{ event.characters.items[7].name }}, {{ event.characters.items[8].name }}, {{ event.characters.items[9].name }}</p>
+        </li>
+    </ol>
+</div>

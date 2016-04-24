@@ -1,0 +1,11 @@
+<div id="list">
+    <input type="text" ng-model="query" placeholder="search names">
+    <ul>
+        <h1>List of Heroes</h1>
+        <li class="border" ng-click="getDetails(hero)" ng-repeat="hero in heroes | filter: query">
+            <p class="hov">{{ hero.name }}</p>
+            <img src="{{ hero.thumbnail.path }}.{{ hero.thumbnail.extension }}" class="hov">
+            <p>Involved in: {{ hero.events.available }} event(s).</p>
+        </li>
+    </ul>
+</div>
